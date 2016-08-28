@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EED2A11D5AF5D200F0E1AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2A01D5AF5D200F0E1AE /* main.m */; };
+		18EED2A41D5AF5D200F0E1AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2A31D5AF5D200F0E1AE /* AppDelegate.m */; };
+		18EED2A71D5AF5D200F0E1AE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2A61D5AF5D200F0E1AE /* LoginViewController.m */; };
+		18EED2AC1D5AF5D200F0E1AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EED2AB1D5AF5D200F0E1AE /* Assets.xcassets */; };
+		18EED2AF1D5AF5D200F0E1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EED2AD1D5AF5D200F0E1AE /* LaunchScreen.storyboard */; };
+		18EED2B81D5AF91000F0E1AE /* LYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2B71D5AF91000F0E1AE /* LYTextField.m */; };
+		18EED2BB1D5B1FE200F0E1AE /* LYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2BA1D5B1FE200F0E1AE /* LYButton.m */; };
+		18EED2BE1D5B890700F0E1AE /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2BD1D5B890700F0E1AE /* NextViewController.m */; };
+		18EED2C11D5B8A0A00F0E1AE /* FourPingTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EED2C01D5B8A0A00F0E1AE /* FourPingTransition.m */; };
+		18EED2C31D5B8A7100F0E1AE /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18EED2C21D5B8A7100F0E1AE /* pic1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18EED29C1D5AF5D100F0E1AE /* 自定义登录界面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义登录界面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EED2A01D5AF5D200F0E1AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18EED2A21D5AF5D200F0E1AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18EED2A31D5AF5D200F0E1AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18EED2A51D5AF5D200F0E1AE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		18EED2A61D5AF5D200F0E1AE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		18EED2AB1D5AF5D200F0E1AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18EED2AE1D5AF5D200F0E1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18EED2B01D5AF5D200F0E1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EED2B61D5AF91000F0E1AE /* LYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextField.h; sourceTree = "<group>"; };
+		18EED2B71D5AF91000F0E1AE /* LYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextField.m; sourceTree = "<group>"; };
+		18EED2B91D5B1FE200F0E1AE /* LYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYButton.h; sourceTree = "<group>"; };
+		18EED2BA1D5B1FE200F0E1AE /* LYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYButton.m; sourceTree = "<group>"; };
+		18EED2BC1D5B890700F0E1AE /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		18EED2BD1D5B890700F0E1AE /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		18EED2BF1D5B8A0A00F0E1AE /* FourPingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourPingTransition.h; sourceTree = "<group>"; };
+		18EED2C01D5B8A0A00F0E1AE /* FourPingTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourPingTransition.m; sourceTree = "<group>"; };
+		18EED2C21D5B8A7100F0E1AE /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EED2991D5AF5D100F0E1AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EED2931D5AF5D100F0E1AE = {
+			isa = PBXGroup;
+			children = (
+				18EED29E1D5AF5D100F0E1AE /* 自定义登录界面 */,
+				18EED29D1D5AF5D100F0E1AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18EED29D1D5AF5D100F0E1AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EED29C1D5AF5D100F0E1AE /* 自定义登录界面.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EED29E1D5AF5D100F0E1AE /* 自定义登录界面 */ = {
+			isa = PBXGroup;
+			children = (
+				18EED2A21D5AF5D200F0E1AE /* AppDelegate.h */,
+				18EED2A31D5AF5D200F0E1AE /* AppDelegate.m */,
+				18EED2BF1D5B8A0A00F0E1AE /* FourPingTransition.h */,
+				18EED2C01D5B8A0A00F0E1AE /* FourPingTransition.m */,
+				18EED2B61D5AF91000F0E1AE /* LYTextField.h */,
+				18EED2B71D5AF91000F0E1AE /* LYTextField.m */,
+				18EED2B91D5B1FE200F0E1AE /* LYButton.h */,
+				18EED2BA1D5B1FE200F0E1AE /* LYButton.m */,
+				18EED2A51D5AF5D200F0E1AE /* LoginViewController.h */,
+				18EED2A61D5AF5D200F0E1AE /* LoginViewController.m */,
+				18EED2BC1D5B890700F0E1AE /* NextViewController.h */,
+				18EED2BD1D5B890700F0E1AE /* NextViewController.m */,
+				18EED29F1D5AF5D200F0E1AE /* Supporting Files */,
+			);
+			path = "自定义登录界面";
+			sourceTree = "<group>";
+		};
+		18EED29F1D5AF5D200F0E1AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18EED2C21D5B8A7100F0E1AE /* pic1.jpg */,
+				18EED2AB1D5AF5D200F0E1AE /* Assets.xcassets */,
+				18EED2AD1D5AF5D200F0E1AE /* LaunchScreen.storyboard */,
+				18EED2B01D5AF5D200F0E1AE /* Info.plist */,
+				18EED2A01D5AF5D200F0E1AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EED29B1D5AF5D100F0E1AE /* 自定义登录界面 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EED2B31D5AF5D200F0E1AE /* Build configuration list for PBXNativeTarget "自定义登录界面" */;
+			buildPhases = (
+				18EED2981D5AF5D100F0E1AE /* Sources */,
+				18EED2991D5AF5D100F0E1AE /* Frameworks */,
+				18EED29A1D5AF5D100F0E1AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义登录界面";
+			productName = "自定义登录界面";
+			productReference = 18EED29C1D5AF5D100F0E1AE /* 自定义登录界面.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EED2941D5AF5D100F0E1AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "雷晏";
+				TargetAttributes = {
+					18EED29B1D5AF5D100F0E1AE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18EED2971D5AF5D100F0E1AE /* Build configuration list for PBXProject "自定义登录界面" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18EED2931D5AF5D100F0E1AE;
+			productRefGroup = 18EED29D1D5AF5D100F0E1AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EED29B1D5AF5D100F0E1AE /* 自定义登录界面 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EED29A1D5AF5D100F0E1AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EED2AF1D5AF5D200F0E1AE /* LaunchScreen.storyboard in Resources */,
+				18EED2C31D5B8A7100F0E1AE /* pic1.jpg in Resources */,
+				18EED2AC1D5AF5D200F0E1AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EED2981D5AF5D100F0E1AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EED2A71D5AF5D200F0E1AE /* LoginViewController.m in Sources */,
+				18EED2BE1D5B890700F0E1AE /* NextViewController.m in Sources */,
+				18EED2A41D5AF5D200F0E1AE /* AppDelegate.m in Sources */,
+				18EED2C11D5B8A0A00F0E1AE /* FourPingTransition.m in Sources */,
+				18EED2B81D5AF91000F0E1AE /* LYTextField.m in Sources */,
+				18EED2BB1D5B1FE200F0E1AE /* LYButton.m in Sources */,
+				18EED2A11D5AF5D200F0E1AE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18EED2AD1D5AF5D200F0E1AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EED2AE1D5AF5D200F0E1AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18EED2B11D5AF5D200F0E1AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18EED2B21D5AF5D200F0E1AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18EED2B41D5AF5D200F0E1AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义登录界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leiyan.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18EED2B51D5AF5D200F0E1AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义登录界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leiyan.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EED2971D5AF5D100F0E1AE /* Build configuration list for PBXProject "自定义登录界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EED2B11D5AF5D200F0E1AE /* Debug */,
+				18EED2B21D5AF5D200F0E1AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EED2B31D5AF5D200F0E1AE /* Build configuration list for PBXNativeTarget "自定义登录界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EED2B41D5AF5D200F0E1AE /* Debug */,
+				18EED2B51D5AF5D200F0E1AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EED2941D5AF5D100F0E1AE /* Project object */;
+}
