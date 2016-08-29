@@ -1,9 +1,4 @@
-//
-//  LYButton.m
-//  自定义登录界面
-//
-//  Created by apple on 16/8/10.
-//  Copyright © 2016年 雷晏. All rights reserved.
+
 //
 #import "LYButton.h"
 
@@ -60,6 +55,7 @@
     [self clickAnimation];
 }
 
+//点击出现白色圆形
 -(void)clickAnimation{
     CAShapeLayer *clickCicrleLayer = [CAShapeLayer layer];
     clickCicrleLayer.frame = CGRectMake(self.bounds.size.width/2, self.bounds.size.height/2, 5, 5);
@@ -67,6 +63,7 @@
     clickCicrleLayer.path = [self drawclickCircleBezierPath:0].CGPath;
     [self.layer addSublayer:clickCicrleLayer];
     
+    //放大变色圆形
     CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
     basicAnimation.duration = 0.5;
     basicAnimation.toValue = (__bridge id _Nullable)([self drawclickCircleBezierPath:(self.bounds.size.height - 10*2)/2].CGPath);
@@ -77,22 +74,27 @@
     
     _clickCicrleLayer = clickCicrleLayer;
     
+    //执行下一个动画
     [self performSelector:@selector(clickNextAnimation) withObject:self afterDelay:basicAnimation.duration];
 }
 
+//
 -(void)clickNextAnimation{
+    //圆形变圆弧
     _clickCicrleLayer.fillColor = [UIColor clearColor].CGColor;
     _clickCicrleLayer.strokeColor = [UIColor whiteColor].CGColor;
     _clickCicrleLayer.lineWidth = 10;
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     
+    //圆弧变大
     CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
     basicAnimation.duration = 0.5;
     basicAnimation.toValue = (__bridge id _Nullable)([self drawclickCircleBezierPath:(self.bounds.size.height - 10*2)].CGPath);
     basicAnimation.removedOnCompletion = NO;
     basicAnimation.fillMode = kCAFillModeForwards;
     
+    //变透明
     CABasicAnimation *basicAnimation1 = [CABasicAnimation animationWithKeyPath:@"opacity"];
     basicAnimation1.beginTime = 0.10;
     basicAnimation1.duration = 0.5;
@@ -111,7 +113,7 @@
     
 }
 
-//
+//半透明的登录按钮的背景
 -(void)startMaskAnimation{
     _maskLayer.opacity = 0.5;
     CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
@@ -124,6 +126,7 @@
     [self performSelector:@selector(dismissAnimation) withObject:self afterDelay:basicAnimation.duration+0.2];
 }
 
+//登录按钮合拢并消失（透明）
 -(void)dismissAnimation{
     [self removeSubViews];
     
@@ -151,6 +154,7 @@
     [self performSelector:@selector(loadingAnimation) withObject:self afterDelay:animationGroup.duration];
 }
 
+//菊花
 -(void)loadingAnimation{
     _loadingLayer = [CAShapeLayer layer];
     _loadingLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
@@ -193,6 +197,7 @@
     return shapeLayer;
 }
 
+//
 -(UIBezierPath *)drawBezierPath:(CGFloat)x{
     CGFloat radius = self.bounds.size.height/2 - 3;
     CGFloat right = self.bounds.size.width-x;
@@ -201,9 +206,11 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     bezierPath.lineJoinStyle = kCGLineJoinRound;
     bezierPath.lineCapStyle = kCGLineCapRound;
-    
+    //右边圆弧
     [bezierPath addArcWithCenter:CGPointMake(right, self.bounds.size.height/2) radius:radius startAngle:-M_PI/2 endAngle:M_PI/2 clockwise:YES];
+    //左边圆弧
     [bezierPath addArcWithCenter:CGPointMake(left, self.bounds.size.height/2) radius:radius startAngle:M_PI/2 endAngle:-M_PI/2 clockwise:YES];
+    //闭合弧线
     [bezierPath closePath];
     
     return bezierPath;
@@ -217,8 +224,17 @@
     return bezierPath;
 }
 
+//画圆
 -(UIBezierPath *)drawclickCircleBezierPath:(CGFloat)radius{
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    /**
+     *  center: 弧线中心点的坐标
+     radius: 弧线所在圆的半径
+     startAngle: 弧线开始的角度值
+     endAngle: 弧线结束的角度值
+     clockwise: 是否顺时针画弧线
+     *
+     */
     [bezierPath addArcWithCenter:CGPointMake(0,0) radius:radius startAngle:0 endAngle:M_PI*2 clockwise:YES];
     return bezierPath;
 }
