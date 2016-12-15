@@ -22,6 +22,11 @@
     }
     return self;
 }
+
+-(void)dealloc{
+    NSLog(@"12143ewewa");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
